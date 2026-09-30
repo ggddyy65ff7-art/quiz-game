@@ -1,8 +1,8 @@
 const CACHE = 'quiz-game-v1';
 const FILES = [
   './', './index.html', './style.css', './script.js', './questions.js',
-  './manifest.json', './icons/icon-192.png', './icons/icon-512.png',
-  './icons/maskable-192.png', './icons/maskable-512.png', './icons/apple-touch-icon.png'
+  './manifest.json', './icon-192.png', './icon-512.png',
+  './maskable-192.png', './maskable-512.png', './apple-touch-icon.png'
 ];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
