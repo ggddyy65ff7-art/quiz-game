@@ -71,5 +71,42 @@
       "form_factor": "narrow",
       "label": "نتيجة الجولة"
     }
+  ],
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "shortcuts": [
+    {
+      "name": "ابدأ اللعبة",
+      "short_name": "ابدأ",
+      "description": "ابدأ جولة جديدة",
+      "url": "./index.html?action=start",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "تحدي اليوم",
+      "short_name": "تحدي اليوم",
+      "description": "10 أسئلة جديدة كل يوم",
+      "url": "./index.html?action=daily",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
   ]
 }

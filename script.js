@@ -129,3 +129,4 @@ draw(`<div class="ico" style="font-size:60px">${ok*100/t>=80?'🏆':ok*100/t>=50
 <button onclick="share()">📤 ${L('مشاركة النتيجة','Share result')}</button>
 <button onclick="${isDaily?'daily()':'start()'}">🔁 ${L('إعادة اللعب','Play again')}</button><button class="s" onclick="home()">🏠 ${L('العودة للرئيسية','Back to home')}</button>`)}
 home();
+try{const a=new URLSearchParams(location.search).get('action');if(a==='daily')daily();else if(a==='start')start();}catch(e){}
